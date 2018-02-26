@@ -26,7 +26,7 @@
 #include "jrd_oem_common.h"
 #include "jrd_thread.h"
 
-#define JRD_THREAD_DEFAULT_STACK_SIZE    (128 * 1024)
+define JRD_THREAD_DEFAULT_STACK_SIZE    (128 * 1024)
 
 int jrd_thread_create(jrd_thread_data_t *thread_data)
 {
