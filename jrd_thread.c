@@ -34,11 +34,11 @@ int jrd_thread_create(jrd_thread_data_t *thread_data)
     size_t stack_size = 0;
     int rc = JRD_NO_ERR;
 */
-	if (!thread_data) {
+	/*if (!thread_data) {
         JRD_OEM_LOG_INFO(JRD_OEM_LOG_ERROR,"Error, param pointer is NULL.\n");
         return JRD_FAIL;
     }
-
+*/
     rc = pthread_attr_init(&attr);
     if (rc) {
         JRD_OEM_LOG_INFO(JRD_OEM_LOG_ERROR,"Error, init thread attribute failed(rc = %d).\n", rc);
