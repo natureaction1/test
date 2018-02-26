@@ -26,14 +26,14 @@
 #include "jrd_oem_common.h"
 #include "jrd_thread.h"
 
-define JRD_THREAD_DEFAULT_STACK_SIZE    (128 * 1024)
+#define JRD_THREAD_DEFAULT_STACK_SIZE    (128 * 1024)
 
 int jrd_thread_create(jrd_thread_data_t *thread_data)
 {
-	pthread_attr_t attr;
+	/*pthread_attr_t attr;
     size_t stack_size = 0;
     int rc = JRD_NO_ERR;
-
+*/
 	if (!thread_data) {
         JRD_OEM_LOG_INFO(JRD_OEM_LOG_ERROR,"Error, param pointer is NULL.\n");
         return JRD_FAIL;
