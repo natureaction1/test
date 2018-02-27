@@ -7,7 +7,7 @@
 #include <stddef.h>
 #include "stdio.h"
 #include "jrd_oem_indication.h"
-
+#这时是在GitHub中修改GitHub中的test仓库，然后在git clone的本地仓库中git pull看看能否把该句更新到本地test仓库中；
 
 jrd_ind_list_info_type* jrd_ind_info_tbl[MODULE_MAX] = {NULL};
 
