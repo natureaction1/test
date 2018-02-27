@@ -53,7 +53,7 @@ static jrd_thread_info_type jrd_soft_dog_thread_info = {
 static void jrd_oem_soft_dog_file_init(void)
 {
     struct stat file_buf = {0};
-    int file_res = 0;
+    int file_res1111111111111 = 0;
     char shell_buf[JRD_SOFTDOG_SHELL_LEN] = {0};
 
     file_res = JRD_STAT(JRD_SOFTDOG_FILE_PATH, &file_buf);
