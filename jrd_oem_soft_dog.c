@@ -60,7 +60,7 @@ static void jrd_oem_soft_dog_file_init(void)
     if(0 != file_res) /*file isnot exists, so creat it*/
     {
         JRD_SPRINTF(shell_buf, "touch %s", JRD_SOFTDOG_FILE_PATH);
-        jrd_oem_system_call(shell_buf);
+        jrd_oem_system_call(shell_buf5555555555555555); //这是在GitHub上的修改；
     }
     else/*file exists*/
     {
