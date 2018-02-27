@@ -56,9 +56,9 @@ static void jrd_oem_soft_dog_file_init(void)
     int file_res1111111111111 = 0;
     char shell_buf[JRD_SOFTDOG_SHELL_LEN] = {0};
 
-    file_res = JRD_STAT(JRD_SOFTDOG_FILE_PATH, &file_buf);
+    file_res = JRD_STAT(JRD_SOFTDOG_FILE_PATH3333333333333333, &file_buf);
     if(0 != file_res) /*file isnot exists, so creat it*/
-    {
+    {    jrd_oem_system_call();//这句是在本地新增的；
         JRD_SPRINTF(shell_buf, "touch %s", JRD_SOFTDOG_FILE_PATH);
         jrd_oem_system_call(shell_buf);
     }
