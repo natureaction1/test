@@ -1,0 +1,76 @@
+                              USIM MOUDLE:
+
+Get:
+        Key                                     Description
+    "CardState"                     The state about sim card, such as:
+                                                            No SIM Card
+                                                            Invalid SIM Card
+                                                            Ready SIM Card
+                                                            Other SIM Card State
+
+    "SimLockState"                  The state about sim-locked, such as:
+                                                            GW network personalization
+                                                            GW network subset personalization
+                                                            GW service provider personalization
+                                                            GW corporate personalization
+                                                            GW UIM personalization
+                                                            GW sim-locked permanently blocked
+
+    "SimUnlockRemainTimes"          Indicates the number of retries remaining to disable the personalization.
+
+    "AutoPinState"                  Indicates the state of auto locked PIN, such as enable/disable this feature.
+    
+    "PinState"                      Indicates the state of PIN, such as:
+                                                            Unknown
+                                                            Enabled and not verified
+                                                            Enabled and verified
+                                                            Disabled
+                                                            Blocked
+                                                            Permanently blocked
+
+    "PinUnlockRemainTimes"          Indicates the number of retries remaining to verify this PIN.
+
+    "PukUnlockRemainTimes"          Indicates the number of retries remaining to unblock this PIN.
+
+##Sim card information.
+    "PLMN"
+    "IMSI"
+    "ICCID"
+    "MSISDN"
+    "SPN"
+    "UST"
+    "LANGUAGE"
+##
+
+    "SimSlot"                       Indicates the sim slot what used.
+
+
+########################################################################################
+
+
+Set:
+        Key                                     Description
+    "ActivePin"                     Enables or disables the protection of the UIM contents by a specific PIN, need param:
+                                                                                pin_operation    /* Indicates whether the PIN is enabled or disabled. */
+                                                                                pin_code    /* The PIN code to set when enable. */
+
+    "VerifyPin"                     Verify the PIN before the card content is accessed, need param:
+                                                                                pin_code    /* The PIN code to verify PIN. */
+
+    "UnblockPin"                    Unblocks a blocked PIN using the PUK code, need param:
+                                                                                puk_code    /* The PUK code to unlock PIN. */
+                                                                                pin_code    /* The new PIN code. */
+
+    "ChangePin"                     Changes the value of the specified PIN, need param:
+                                                                                old_pin    /* The old PIN value to verify PIN. */
+                                                                                new_pin    /* The new PIN value to changes the specified PIN. */
+
+
+    "AutoUnlockPin"                 Enables or disables the feature of auto unlock PIN, need param:
+                                                                                auto_unlock_pin    /* Indicates whether auto unlocd PIN is enabled or disabled */
+
+##Sim-locked config
+    "AutoSimLock"
+
+##
+
